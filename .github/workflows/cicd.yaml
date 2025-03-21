@@ -24,7 +24,8 @@ jobs:
 
     - name: Restore dependencies (install Nuget packages)
       run: dotnet restore
-
+      working-directory: ./SecureApp 
+      
     - name: Build and publish the app
       run: |
         dotnet build --no-restore
