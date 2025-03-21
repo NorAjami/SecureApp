@@ -24,3 +24,5 @@ app.MapRazorPages()
    .WithStaticAssets();
 
 app.Run();
+
+// Testar CI/CD-pipeline – ändring för att trigga deployment
