@@ -33,7 +33,7 @@ jobs:
     - name: Upload app artifacts to Github
       uses: actions/upload-artifact@v4
       with:
-        name: app-artifacts
+        name: secureapp-artifacts
         path: ./publish
   
 
