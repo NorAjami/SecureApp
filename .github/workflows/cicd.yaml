@@ -52,12 +52,12 @@ jobs:
           run: |
             sudo systemctl stop SecureApp.service || true
   
-        - name: Deploy the application
+        - name: Replace app files
           run: |
-            sudo rm -rf /opt/SecureApp || true
-            sudo mkdir -p /opt/SecureApp
-            sudo cp -r ./secureapp-artifacts/* /opt/SecureApp
-
+             sudo rm -rf /opt/SecureApp || true
+             sudo mkdir -p /opt/SecureApp
+             sudo cp -r ./publish/* /opt/SecureApp
+          
         - name: Start the application service
           run: sudo systemctl start SecureApp.service
             
