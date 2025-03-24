@@ -54,11 +54,14 @@ jobs:
   
         - name: Deploy the application
           run: |
-            sudo rm -Rf /opt/SecureApp || true
+            sudo rm -rf /opt/SecureApp || true
             sudo mkdir -p /opt/SecureApp
-            sudo cp -r ./ /opt/SecureApp
+            sudo cp -r ./publish/* /opt/SecureApp
 
         - name: Start the application service
-          run: |
-            sudo systemctl start SecureApp.service
+          run: sudo systemctl start SecureApp.service
+            
+        - name: Publish the project
+          run: dotnet publish SecureApp.csproj -c Release -o ./publish
+          working-directory: .
   
