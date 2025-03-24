@@ -27,7 +27,7 @@ jobs:
       working-directory: .
       
     - name: Build and publish the app
-      run: dotnet publish SecureApp.csproj -c Release -o ./publish  
+      run: dotnet build --no-restore 
       working-directory: .
 
     - name: Upload app artifacts to Github
@@ -55,8 +55,9 @@ jobs:
         - name: Deploy the application
           run: |
             sudo rm -Rf /opt/SecureApp || true
-            sudo cp -r /home/azureuser/actions-runner/_work/SecureApp/SecureApp/ /opt/SecureApp
-  
+            sudo mkdir -p /opt/SecureApp
+            sudo cp -r ./ /opt/SecureApp
+
         - name: Start the application service
           run: |
             sudo systemctl start SecureApp.service
