@@ -56,7 +56,7 @@ jobs:
           run: |
             sudo rm -rf /opt/SecureApp || true
             sudo mkdir -p /opt/SecureApp
-            sudo cp -r ./publish/* /opt/SecureApp
+            sudo cp -r ./secureapp-artifacts/* /opt/SecureApp
 
         - name: Start the application service
           run: sudo systemctl start SecureApp.service
