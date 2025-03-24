@@ -1,24 +1,22 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureApp", "SecureApp\SecureApp.csproj", "{2E3F8B4F-4E9A-5D63-0537-53D8F638270B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureApp", "SecureApp.csproj", "{A4808A36-D8CF-444C-8704-97BDDFF6056D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E3F8B4F-4E9A-5D63-0537-53D8F638270B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E3F8B4F-4E9A-5D63-0537-53D8F638270B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E3F8B4F-4E9A-5D63-0537-53D8F638270B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E3F8B4F-4E9A-5D63-0537-53D8F638270B}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C219CC91-EFAF-4DD8-9E4E-D28C9BFBDCCC}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4808A36-D8CF-444C-8704-97BDDFF6056D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4808A36-D8CF-444C-8704-97BDDFF6056D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4808A36-D8CF-444C-8704-97BDDFF6056D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4808A36-D8CF-444C-8704-97BDDFF6056D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
